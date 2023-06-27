@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 2rem;
+  background-color: #1D325D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #88A47C;
+}
+
+.selected {
+  color: #E7E3BE;
+  font-weight: bold;
+}
+
+.midpoint-dot {
+  user-select: none;
+position: absolute;
+width: 20px;
+content: url("arrow.png");
+transform: translate(-50%, -50%) rotate(45deg);
+}
+
