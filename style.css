@@ -21,6 +21,7 @@ body {
   cursor: pointer;
   user-select: none;
   color: #88A47C;
+  aspect-ratio: 1/1;
 }
 
 .selected {
